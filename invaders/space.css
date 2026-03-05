@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f9b913b-c48a-43ab-a9aa-26d4355d1d80/dgdfnqh-5da73d20-714f-4ee2-abe9-aa4981f31a64.png/v1/fill/w_1280,h_549,q_80,strp/space_art_1___4k_ultrawide_wallpaper_background_by_ixul_dgdfnqh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQ5IiwicGF0aCI6IlwvZlwvNmY5YjkxM2ItYzQ4YS00M2FiLWE5YWEtMjZkNDM1NWQxZDgwXC9kZ2RmbnFoLTVkYTczZDIwLTcxNGYtNGVlMi1hYmU5LWFhNDk4MWYzMWE2NC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LQ8vZ4S2-A2qQCDRcpbewDRJ41jXUydSvTkoTG0S8n0'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    color: rgb(234, 234, 234); /* Optional: Set default text color */
+}
+
+#board {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: Add a semi-transparent border */
+    background-color: rgba(0, 0, 0, 0.7); /* Set a semi-transparent black background */
+    margin-bottom: 20px; /* Space between the board and buttons */
+    opacity: 0.85; /* Adjust overall opacity */
+}
+
+button {
+    background-color: rgba(5, 1, 5, 0.7); /* Semi-transparent button background */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Change cursor on hover */
+    margin: 15px; /* Space between buttons  (was 15px)*/
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.7); /* Darker blue on hover */
+}
+
+#gameOverText {
+    display: none; /* Initially hidden */
+    text-align: center; /* Center the text */
+    font-size: 48px; /* Size of the Game Over text */
+    color: red; /* Color of the Game Over text */
+}
+
+#info {
+    text-align: center; /* Center align the text inside info */
+    color: rgba(255, 255, 255, 0.9); /* Make text white for better visibility */
+    font-weight: bold; /* Make text thicker */
+    font-size: 24px; /* Increase the font size for prominence */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a dark semi-transparent background */
+    padding: 15px; /* Add padding around the text */
+    border-radius: 8px; /* Optional: rounded corners for the background */
+}
+
+
+p {
+    margin: 10px 0; /* Add space between paragraphs */
+    font-size: 18px; /* Set font size for paragraphs */
+}
+
+.back-to-games {
+    display: inline-block; /* Makes the link behave like a box */
+    padding: 10px 20px; /* Adds space inside the box */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white; /* White text color */
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Adds a border */
+    border-radius: 5px; /* Slight rounding of the corners */
+    text-decoration: none; /* Removes the underline from the link */
+    font-size: 18px; /* Adjusts the font size */
+    margin-top: 10px; /* Adds space above the link */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.back-to-games:hover {
+    background-color: rgb(174, 41, 41); /* Darkens background on hover */
+    border-color: rgba(255, 255, 255, 1); /* Lightens border on hover */
+}
