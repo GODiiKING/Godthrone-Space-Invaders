@@ -80,3 +80,11 @@ p {
     background-color: rgb(174, 41, 41); /* Darkens background on hover */
     border-color: rgba(255, 255, 255, 1); /* Lightens border on hover */
 }
+
+#board {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent like your image */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* This ensures it scales down to fit the screen width */
+    height: auto;
+}
